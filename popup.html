@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fact Checker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <div class="header">
+      <img src="icons/icon128.png" alt="Fact Checker Logo" class="logo" />
+      <h1>Fact Checker</h1>
+      <p class="tagline">Powered by Perplexity AI</p>
+    </div>
+
+    <div id="statusMessage" class="card">
+      <p><strong>Extension is ready!</strong></p>
+      <p>Select any text on a page and right-click → <em>Fact check with AI</em>.</p>
+    </div>
+
+    <!-- Real progress loader -->
+    <div id="loadingSection" class="loading-card hidden">
+      <p>Checking facts...</p>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <div id="resultSection" class="hidden">
+      <p class="success">✅ Fact-check completed successfully!</p>
+    </div>
+
+    <div id="errorSection" class="hidden">
+      <p class="error">⚠️ There was an error during fact-checking.</p>
+    </div>
+
+    <div class="footer-badge glow">Fact Checker by Perplexity</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
